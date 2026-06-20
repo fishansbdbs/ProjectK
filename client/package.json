@@ -1,0 +1,20 @@
+{
+  "name": "project-k-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build && node scripts/check-build-html.js",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test src/**/*.test.js",
+    "check": "npm run build"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.7.5",
+    "three": "^0.164.1"
+  },
+  "devDependencies": {
+    "vite": "^8.0.16"
+  }
+}
